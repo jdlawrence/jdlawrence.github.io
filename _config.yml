@@ -2,7 +2,7 @@
 title: The musings of Jamil Lawrence
 email: jamil.lawrence@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I blog about things that topics that make me curious.
+  I blog about things that make me curious.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jdlawrence.github.io" # the base hostname & protocol for your site
 twitter_username: TheJDLawrence
