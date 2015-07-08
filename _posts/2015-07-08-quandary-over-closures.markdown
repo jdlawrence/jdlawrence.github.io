@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A quandary over closures"
+title:  "A quandary over Javascript closures"
 date:   2015-07-08 08:00:00
 categories: javascript closures
 ---
@@ -23,13 +23,13 @@ Let's add certain qualities to yourself. We'll add your height, your weight, and
 }
 {% endhighlight %}
 
-Let's say that you have the ability to view these personal properties. You can tell your height (`myHeight`), your weight (`myWeight`), your attractiveness (`myAttractiveness`).
+Let's say that you have the ability to view these personal properties. You can recall your height (`myHeight`), your weight (`myWeight`), your attractiveness (`myAttractiveness`).
 
 {% highlight js %}
 var me = function() {
   var height = 74;
   var weight = 220;
-  var attractiveness = 8.5;
+  var attractiveness = 9;
 
   var myHeight = function() {
     return height; 
@@ -67,7 +67,7 @@ var me = function() {
   };
 
   var makeMeBeautiful = function(){
-    attractiveness += 0.5;
+    attractiveness += 0.2;
     console.log("My attractiveness is now a " + attractiveness);
   };
 
@@ -77,14 +77,16 @@ var me = function() {
 {% endhighlight %}
 
 
-Our `me` function now returns the `makeMeBeautiful` function. We can assign this function to a variable, `aMoreAttractiveMe`, and when it's called, our attractiveness increases! This is essentially taking a picture of yourself, going back into time, and changing the properties of yourself.
+Our `me` function now returns the `makeMeBeautiful` function. We can assign this function to a variable, `aMoreAttractiveMe`, and when it's called, our attractiveness increases! This is essentially taking a picture of yourself, going back into time, and changing the properties of yourself. 
 
 {% highlight js %}
 var aMoreAttractiveMe = me();
-aMoreAttractiveMe(); // Outputs "My attractiveness is now a 9.5"
+aMoreAttractiveMe(); // Outputs "My attractiveness is now a 9.2"
 {% endhighlight %}
 
-Hopefully this analogy has given you a useful viewpoint on closures. They are used very frequently in javascript and its powerful libraries such as jQuery. Go forth and use closures!
+The `me` function returns a function that is assigned to `aMoreAttractiveMe`. Whenever this function is called, although `me` has long since returned, the `attractiveness` variable inside of the `me` is still able to be increased. It will keep increasing for as many times as you call it.
+
+Hopefully this analogy has given you a useful viewpoint on closures. They are used very frequently in Javascript and its powerful libraries such as jQuery. Go forth and use closures!
 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
