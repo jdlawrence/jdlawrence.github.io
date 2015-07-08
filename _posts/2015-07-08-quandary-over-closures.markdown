@@ -4,11 +4,7 @@ title:  "A quandary over closures"
 date:   2015-07-08 08:00:00
 categories: javascript closures
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+On my journey to becoming a programming Ninja (I've still got a long way to go), one of the topics that has caused me confusion and curiousity is closures. While I am far from a Ninja in any language, I've had a fair amount of experience programming in Java. However, in my limited experience, I didn't run across closures in Java, and 
 
 {% highlight ruby %}
 def print_hi(name)
