@@ -82,6 +82,7 @@ Our `me` function now returns the `makeMeBeautiful` function. We can assign this
 {% highlight js %}
 var aMoreAttractiveMe = me();
 aMoreAttractiveMe(); // Outputs "My attractiveness is now a 9.2"
+aMoreAttractiveMe(); // Outputs "My attractiveness is now a 9.4"
 {% endhighlight %}
 
 The `me` function returns a function that is assigned to `aMoreAttractiveMe`. Whenever this function is called, although `me` has long since returned, the `attractiveness` variable inside of the `me` is still able to be increased. It will keep increasing for as many times as you call it.
