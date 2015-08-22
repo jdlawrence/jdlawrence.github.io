@@ -45,6 +45,8 @@ var exponentiate = function(base, exponent) {
 exponentiate(2,4); // should print out 'base: 2 exponent: 4'
 {% endhighlight %}
 
+4) After seeing that this is not the correct out, refactor and try another solution:
+
 Part 2 will include common toy problems that more are based on. Stay tuned!
 
 
