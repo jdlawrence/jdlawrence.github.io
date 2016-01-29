@@ -12,7 +12,7 @@ Javascript console within Sublime Text. Here's an example of the finished produc
 
 ![alt text](/images/sublimeJSConsole.png)
 
-To confire the Javascript Console on a Mac, do the following:
+To configure the Javascript Console on a Mac, do the following:
 
 1) Install Node.js from their website [here](https://nodejs.org/).
 
